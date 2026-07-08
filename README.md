@@ -143,33 +143,8 @@ Top prediction probabilities:
 - Successfully generated feature importance rankings, confusion matrix, classification report, and prediction outputs for comprehensive model evaluation.
 - Exported the trained Random Forest model and Label Encoder using **Joblib** for future inference.
 
-### Generated Outputs
 
-**Figures**
 
-- Crop Distribution
-- Feature Distributions
-- Correlation Heatmap
-- Pair Plot
-- Confusion Matrix
-- Feature Importance
-- Sample Decision Tree from the Random Forest
-
-**Tables**
-
-- Dataset Preview
-- Dataset Summary
-- Missing Values
-- Crop Distribution
-- Correlation Matrix
-- Encoded Crop Labels
-- Training Features & Labels
-- Sample Predictions
-- Evaluation Metrics
-- OOB Score
-- Classification Report
-- Feature Importance
-- Confusion Matrix
 ---
 
 ## 🛠️ Tech Stack
