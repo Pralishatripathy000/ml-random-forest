@@ -80,7 +80,96 @@ ml-random-forest
 ├── .gitignore
 └── LICENSE
 ```
+## 📈 Results
 
+The Random Forest Classifier achieved excellent performance on the Crop Recommendation dataset, accurately identifying the most suitable crop based on soil nutrient composition and environmental conditions. The ensemble learning approach demonstrated strong generalization across all crop categories.
+
+### Model Performance
+
+| Metric | Score |
+|--------|------:|
+| Accuracy | **99.32%** |
+| Weighted Precision | **99.35%** |
+| Weighted Recall | **99.32%** |
+| Weighted F1-Score | **99.32%** |
+| Out-of-Bag (OOB) Score | **99.55%** |
+
+### Feature Importance
+
+The Random Forest model identified the following features as the most influential for crop recommendation:
+
+| Rank | Feature | Importance |
+|-----:|---------|-----------:|
+| 1 | Rainfall | **0.2239** |
+| 2 | Humidity | **0.2151** |
+| 3 | Potassium (K) | **0.1791** |
+| 4 | Phosphorus (P) | **0.1528** |
+| 5 | Nitrogen (N) | **0.1065** |
+| 6 | Temperature | **0.0729** |
+| 7 | pH | **0.0498** |
+
+### Sample Prediction
+
+For a sample agricultural observation with:
+
+- Nitrogen (N): **90**
+- Phosphorus (P): **42**
+- Potassium (K): **43**
+- Temperature: **20.88°C**
+- Humidity: **82.00%**
+- pH: **6.50**
+- Rainfall: **202.94 mm**
+
+The Random Forest model recommended:
+
+> 🌾 **Rice**
+
+Top prediction probabilities:
+
+| Crop | Probability |
+|------|------------:|
+| Rice | **95.51%** |
+| Jute | **4.31%** |
+| Maize | **0.17%** |
+| Papaya | **0.01%** |
+| Apple | **0.00%** |
+
+### Key Observations
+
+- Achieved **99.32% classification accuracy** across **22 crop categories**.
+- Obtained an **Out-of-Bag Score of 99.55%**, indicating excellent generalization performance without requiring a separate validation dataset.
+- Rainfall and humidity emerged as the most influential environmental factors for crop recommendation.
+- Soil nutrient levels (Nitrogen, Phosphorus, and Potassium) also played a significant role in determining the recommended crop.
+- Successfully generated feature importance rankings, confusion matrix, classification report, and prediction outputs for comprehensive model evaluation.
+- Exported the trained Random Forest model and Label Encoder using **Joblib** for future inference.
+
+### Generated Outputs
+
+**Figures**
+
+- Crop Distribution
+- Feature Distributions
+- Correlation Heatmap
+- Pair Plot
+- Confusion Matrix
+- Feature Importance
+- Sample Decision Tree from the Random Forest
+
+**Tables**
+
+- Dataset Preview
+- Dataset Summary
+- Missing Values
+- Crop Distribution
+- Correlation Matrix
+- Encoded Crop Labels
+- Training Features & Labels
+- Sample Predictions
+- Evaluation Metrics
+- OOB Score
+- Classification Report
+- Feature Importance
+- Confusion Matrix
 ---
 
 ## 🛠️ Tech Stack
