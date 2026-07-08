@@ -1,3 +1,8 @@
+<img width="1536" height="1024" alt="a246ee74-c4bb-435d-92d1-b240e9164720" src="https://github.com/user-attachments/assets/14f93944-fcd7-4d95-9e6a-3c242a04822f" />
+
+
+
+
 # 🌲 ML Random Forest
 
 > **An end-to-end implementation of Random Forest Classification using the Crop Recommendation dataset, covering exploratory data analysis, feature engineering, ensemble learning, feature importance, and model evaluation.**
